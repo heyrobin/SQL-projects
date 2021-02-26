@@ -1,4 +1,7 @@
+/* Sourse https://www.therichest.com/top-lists/top-100-richest-actors/
+
 /* Create table about the people and what they do here */
+
 CREATE TABLE famous(Name TEXT,net_worth TEXT,age INTEGER,location TEXT);
 
 INSERT INTO famous (Name , net_worth, age, location) VALUES("Merv Griffin","$1 Billion",95, "United states");
@@ -43,4 +46,5 @@ INSERT INTO famous (Name , net_worth, age, location) VALUES			("Mark Wahlberg","
 INSERT INTO famous (Name , net_worth, age, location) VALUES			("Michael Shanks","$215 Million",49 , "Canada");
 
 SELECT * From famous where location = "India"
-ORDER BY net_worth;
+ORDER BY net_worth DESC;
+
