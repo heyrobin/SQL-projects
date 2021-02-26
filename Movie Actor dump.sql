@@ -59,7 +59,11 @@ INSERT INTO famous (Name , net_worth, age) VALUES			("Harrison Ford","$230 Milli
 INSERT INTO famous (Name , net_worth, age) VALUES			("Mark Wahlberg","$225 Million",48);
 INSERT INTO famous (Name , net_worth, age) VALUES			("Michael Shanks","$215 Million",49);
 
+SELECT Name,location,net_worth,age from country
+JOIN famous
+ON country.id = famous.id;
 
-
-SELECT * From country where location = "India"
-ORDER BY location DESC;
+SELECT Name,location,net_worth,age from country
+JOIN famous
+ON country.id = famous.id
+WHERE location = "India";
