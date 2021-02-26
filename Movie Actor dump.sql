@@ -3,39 +3,6 @@
 /* Create table about the people and what they do here */
 
 CREATE TABLE country(id INTEGER PRIMARY KEY, location TEXT);
-
-INSERT INTO country (id, location) VALUES(1,"United States");
-INSERT INTO country (id, location) VALUES(2, "India");
-INSERT INTO country (id, location) VALUES(3,"United states")
-INSERT INTO country (id, location) VALUES(4,"United states")
-INSERT INTO country (id, location) VALUES(5,"India")
-INSERT INTO country (id, location) VALUES(6,"Australia")
-INSERT INTO country (id, location) VALUES(7,"United states")
-INSERT INTO country (id, location) VALUES(8,"United states")
-INSERT INTO country (id, location) VALUES(9,"United states")
-INSERT INTO country (id, location) VALUES(10,"CHINA")
-INSERT INTO country (id, location) VALUES(11,"United states")
-INSERT INTO country (id, location) VALUES(12,"United states")  
-INSERT INTO country (id, location) VALUES(13,"United states") 
-INSERT INTO country (id, location) VALUES(14,"United states")
-INSERT INTO country (id, location) VALUES(15,"United states")  
-INSERT INTO country (id, location) VALUES(16,"United states") 
-INSERT INTO country (id, location) VALUES(17,"United states")
-INSERT INTO country (id, location) VALUES(18,"Canada")
-INSERT INTO country (id, location) VALUES(19,"United states")
-INSERT INTO country (id, location) VALUES(20,"United states")
-INSERT INTO country (id, location) VALUES(21,"United states")
-INSERT INTO country (id, location) VALUES(22,"India")
-INSERT INTO country (id, location) VALUES(23,"United states")
-INSERT INTO country (id, location) VALUES(24,"United states")
-INSERT INTO country (id, location) VALUES(25,"Canada") 
- 
- 
-/* Sourse https://www.therichest.com/top-lists/top-100-richest-actors/
-
-/* Create table about the people and what they do here */
-
-CREATE TABLE country(id INTEGER PRIMARY KEY, location TEXT);
 INSERT INTO country (id, location) VALUES(1,"United states");
 INSERT INTO country (id, location) VALUES(2,"India");
 INSERT INTO country (id, location) VALUES(3,"United states");
@@ -66,16 +33,15 @@ INSERT INTO country (id, location) VALUES(26,"United States");
 
 CREATE TABLE famous(id INTEGER PRIMARY KEY, Name TEXT,net_worth TEXT,age INTEGER);
 
-INSERT INTO famous (Name , net_worth, age) VALUES("Merv Griffin","$1 Billion",95);
-INSERT INTO famous (Name , net_worth, age) VALUES("Shahrukh Khan","$750 Million",54);
-INSERT INTO famous (Name , net_worth, age) VALUES
-("Tom Cruise",	"$550 Million",	57);
+INSERT INTO famous (Name , net_worth, age) VALUES   ("Merv Griffin","$1 Billion",95);
+INSERT INTO famous (Name , net_worth, age) VALUES   ("Shahrukh Khan","$750 Million",54);
+INSERT INTO famous (Name , net_worth, age) VALUES   ("Tom Cruise",	"$550 Million",	57);
 INSERT INTO famous (Name , net_worth, age) VALUES			("George Clooney",	"$500 Million",	58);
-INSERT INTO famous (Name , net_worth, age) VALUES	
-("Amitabh Bachchan",	"$425 Million",	77);
+INSERT INTO famous (Name , net_worth, age) VALUES   ("Amitabh Bachchan",	"$425 Million",	77);
 INSERT INTO famous (Name , net_worth, age) VALUES			("Mel Gibson","$425 Million",64);	
 INSERT INTO famous (Name , net_worth, age) VALUES			("Adam Sandler","$420 Million",53);				
-INSERT INTO famous (Name , net_worth, age) VALUES			("Jack Nicholson","$400 Million",82);								INSERT INTO famous (Name , net_worth, age) VALUES			("Sylvester Stallone","$400 Million",73);
+INSERT INTO famous (Name , net_worth, age) VALUES			("Jack Nicholson","$400 Million",82);								
+INSERT INTO famous (Name , net_worth, age) VALUES			("Sylvester Stallone","$400 Million",73);
 INSERT INTO famous (Name , net_worth, age) VALUES			("Jackie Chan","$395 Million",65);
 INSERT INTO famous (Name , net_worth, age) VALUES			("Clint Eastwood","$375 Million",89);
 INSERT INTO famous (Name , net_worth, age) VALUES			("Tom Hanks","$350 Million",63);
