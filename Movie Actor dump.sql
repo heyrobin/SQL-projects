@@ -42,4 +42,5 @@ INSERT INTO famous (Name , net_worth, age, location) VALUES			("Mark Wahlberg","
 
 INSERT INTO famous (Name , net_worth, age, location) VALUES			("Michael Shanks","$215 Million",49 , "Canada");
 
-
+SELECT * From famous where location = "India"
+ORDER BY net_worth;
