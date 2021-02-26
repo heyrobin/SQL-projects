@@ -4,15 +4,14 @@
 
 CREATE TABLE user_info (UID INTEGER PRIMARY KEY, Name Text, Age INTEGER, Gender TEXT);
 /*UPDATE */
-INSERT INTO 
+INSERT INTO user_info (UID,Name,Age,Gender) VALUES (1,"NAME",23,"Male");
 
 
-///////////////////////////////////////////////////////////////////
+
 /* Fitness app database*/
 CREATE TABLE session (ID TEXT,Emotion TEXT);
 /*UPDATE */
 
-///////////////////////////////////////////////////////////////////
 /* Fitness app database*/
 CREATE TABLE fitbit (ID integer primary key, Exercise Text,Day TEXT, Time_minutes INTEGER);
 /*UPDATE */
@@ -25,4 +24,4 @@ INSERT INTO fitbit (ID,Exercise,Day,Time_minutes) VALUES (6,"BACK","Saturday",30
 INSERT INTO fitbit (ID,Exercise,Day,Time_minutes) VALUES (7,"LEGS","Sunday",30);
 
 
-SELECT * FROM fitbit
+SELECT * FROM fitbit;
