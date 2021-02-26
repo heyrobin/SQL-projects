@@ -1,16 +1,20 @@
 /* What does the app's SQL look like? */
 
 /* Fitness app database*/
-CREATE TABLE fitbit (ID integer primary key, Exercise Text,Day TEXT, Time_minutes INTEGER);
-/*UPDATE */
 
+CREATE TABLE user_info (UID INTEGER PRIMARY KEY, Name Text, Age INTEGER, Gender TEXT);
+/*UPDATE */
+INSERT INTO 
+
+
+///////////////////////////////////////////////////////////////////
 /* Fitness app database*/
 CREATE TABLE session (ID TEXT,Emotion TEXT);
 /*UPDATE */
 
-
+///////////////////////////////////////////////////////////////////
 /* Fitness app database*/
-CREATE TABLE user_info (UID INTEGER PRIMARY KEY, Name Text, Age INTEGER, Gender TEXT);
+CREATE TABLE fitbit (ID integer primary key, Exercise Text,Day TEXT, Time_minutes INTEGER);
 /*UPDATE */
 INSERT INTO fitbit (ID,Exercise,Day,Time_minutes) VALUES (1,"CHEST","Monday",30);
 INSERT INTO fitbit (ID,Exercise,Day,Time_minutes) VALUES (2,"BICEPS","Tuesday",30);
