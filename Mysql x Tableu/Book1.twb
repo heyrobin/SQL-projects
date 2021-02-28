@@ -428,7 +428,7 @@
       </connection>
       <aliases enabled='yes' />
       <column caption='Normalized Amoun' datatype='real' name='[Calculation_1443403696561905664]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='if [currency] == &apos;USD&apos; THAN [sales_amount] * 74 ELSE [sales_amount] END' />
+        <calculation class='tableau' formula='if [currency] == &apos;USD&apos; THEN [sales_amount] * 74 ELSE [sales_amount] END' />
       </column>
       <column caption='Normalized amount' datatype='real' name='[Calculation_1443403696563486721]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='IF [currency]==&apos;USD&apos; THEN [sales_amount]*74 ELSE [sales_amount] END' />
@@ -1084,6 +1084,26 @@
       </table>
       <simple-id uuid='{E7E6DD0C-7941-493D-9E6A-76EB79852BF3}' />
     </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{537CA54D-67EF-4DD5-8247-1A66C9096D7A}' />
+    </worksheet>
     <worksheet name='Top 5 Customers'>
       <table>
         <view>
@@ -1342,8 +1362,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='24' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98222' id='23' param='vert' w='98934' x='533' y='889'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='26' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98222' id='25' param='vert' w='98934' x='533' y='889'>
                 <zone fixed-size='50' h='5556' id='6' is-fixed='true' name='Year' w='17714' x='41000' y='3222'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1689,7 +1709,7 @@
       </viewpoint>
       <simple-id uuid='{4D2D042E-76A5-4579-A9FA-C93DB0F8B23D}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Month'>
           <selection-collection>
@@ -1731,6 +1751,29 @@
       </viewpoints>
       <active id='-1' />
       <simple-id uuid='{DF553DF0-D276-4E1D-88CC-87BE1D7B7DE8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC7273BF-88D9-42EB-8959-181D621520B4}' />
     </window>
   </windows>
   <thumbnails>
@@ -2774,6 +2817,20 @@
       q2A70v2ttxogaxgelXq9hqIZyJJAlmVsy0ZR1a+00zUCcHE5CN3hArm4HBBXAC49jSsAl57G
       FYBLT+MKwKWncQXg0tO4AnDpaVwBuPQ0rgBcehpXAC49zf8H0XWlnr2aQwAAAAAASUVORK5C
       YII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 10' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='192' name='Top 5 Customers' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
