@@ -15,6 +15,8 @@ drop table [table_name];
 Insert into [tb_name] (id,name) values (1,"robin"));//values
 alter table [old table name] rename to [new name];//rename
 alter table [table_name] add col1;//add
+ALTER TABLE [tb_name] CHANGE [old_column] [new_col_name] data_type;
+
 
 
 <h3> 
