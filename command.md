@@ -24,3 +24,6 @@ truncate table [table_name];
 insert intor [table_name] values(12,'ankit','kanpur');
 update [table_name] set col= value , col = value where col=value;
 delete from [table_name] where col=value;
+
+<h3> adding concat column to new column
+UPDATE yourtable SET combined = CONCAT(zipcode, ' - ', city, ', ', state);
